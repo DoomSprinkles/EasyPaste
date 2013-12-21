@@ -1,0 +1,47 @@
+{
+  "name": "easypaste",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Private Pastebin Server",
+  "keywords": [
+    "paste",
+    "pastebin"
+  ],
+  "author": {
+    "name": "Liam Stanley",
+    "email": "me@liamstanley.net",
+    "url": "http://liamstanley.net/"
+  },
+  "main": "easypaste",
+  "dependencies": {
+    "winston": "0.6.2",
+    "connect": "1.9.2",
+    "redis-url": "0.1.0",
+    "redis": "0.8.1",
+    "uglify-js": "1.3.3"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "bundledDependencies": [],
+  "engines": {
+    "node": "0.8.10",
+    "npm": "1.1.49"
+  },
+  "bin": {
+    "easypaste": "./server.js"
+  },
+  "files": [
+    "server.js",
+    "lib",
+    "static"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha -r should spec/*"
+  }
+}
