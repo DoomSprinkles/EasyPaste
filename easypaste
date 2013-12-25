@@ -20,7 +20,7 @@ def run(*args):
         response = urllib2.urlopen(req)
         the_page = response.read()
         key = json.loads(the_page)['key']
-        url = "http://hastebin.com/%s" % key
+        url = "http://%s/%s" % (URL, key)
         if extensions[i]:
             url += extensions[i]
         print url
