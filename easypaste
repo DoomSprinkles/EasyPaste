@@ -5,7 +5,7 @@ import urllib2
 import os
 import json
 
-URL = 'http://hastebin.com/documents'
+URL = 'yourdomain.com'
 
 def run(*args):
     if args:
@@ -16,7 +16,7 @@ def run(*args):
         extensions = [None]
 
     for i, each in enumerate(content):
-        req = urllib2.Request(URL, each)
+        req = urllib2.Request(http://%s/documents % URL, each)
         response = urllib2.urlopen(req)
         the_page = response.read()
         key = json.loads(the_page)['key']
