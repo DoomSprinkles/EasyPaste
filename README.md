@@ -126,7 +126,7 @@ All of which are optional except `type` with very logical default values.
 
 ## Author
 
-modified by Liam Stanley <me@liamstanley.net>
+modified by Liam Stanley <me@liamstanley.io>
 John Crepezzi <john.crepezzi@gmail.com>
 
 ## License
